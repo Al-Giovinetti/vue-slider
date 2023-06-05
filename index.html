@@ -19,15 +19,15 @@
             <div class="container">
                 <div class="cover-zone">
                     <img :src="images[activeIndex].img" :alt="images[activeIndex].title">
-                    <div class="goOn flex">
+                    <div class="goOn flex" @click="NextSlide()">
                         <i class="fa-regular fa-circle-right"></i>
                     </div>
-                    <div class="goBack flex">
+                    <div class="goBack flex" @click="PreviusSlide()">
                         <i class="fa-regular fa-circle-left"></i>
                     </div>
                 </div>
                 <h2>
-                    Titolo
+                    {{images[activeIndex].title}}
                 </h2>
             </div>
         </main>
