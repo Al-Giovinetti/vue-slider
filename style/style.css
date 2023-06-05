@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+.flex{
+    display: flex;
+}
+
+body{
+    background-color: goldenrod;
+}
+
 header>h1{
     text-align: center;
     padding: 1rem;
@@ -13,6 +21,12 @@ main div.container{
     width: 40%;
     margin: 0 auto;
     background-color: orangered;
+}
+
+div.cover-zone{
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 
 div.container img{
@@ -26,3 +40,27 @@ div.container h2{
     text-align: center;
     padding: 1rem;
 }
+
+div.goOn,
+div.goBack{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 40px;
+}
+
+div.goOn{
+    right:-50px;
+}
+
+div.goBack{
+    left: -50px;
+}
+
+div.goOn > i,
+div.goBack > i{
+    margin: auto;
+    font-size: 1.5rem;
+}
+
