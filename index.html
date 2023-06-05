@@ -18,7 +18,7 @@
         <main>
             <div class="container">
                 <div class="cover-zone">
-                    <img :src="images[activeIndex].img" :alt="images[activeIndex].title">
+                    <img v-bind:src="images[activeIndex].img" v-bind:alt="images[activeIndex].title">
                     <div class="goOn flex" @click="NextSlide()">
                         <i class="fa-regular fa-circle-right"></i>
                     </div>
@@ -29,6 +29,13 @@
                 <h2>
                     {{images[activeIndex].title}}
                 </h2>
+                <p>With :{{ images[activeIndex].actor}}</p>
+                <div class="thumbnails flex" >
+                    <div class="thumbnail" v-for="(film,index) in images">
+                        <img v-bind:src="images[index].img" v-bind:alt="images[activeIndex].title"
+                        v-bind:class="index === activeIndex ? 'active' : '' ">
+                    </div>
+                </div>
             </div>
         </main>
     </div>

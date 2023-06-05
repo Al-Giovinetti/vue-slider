@@ -20,7 +20,8 @@ header>h1{
 main div.container{
     width: 28%;
     margin: 0 auto;
-    background-color: orangered;
+    background-color:wheat;
+    text-align: center;
 }
 
 div.cover-zone{
@@ -29,7 +30,7 @@ div.cover-zone{
     width: 100%;
 }
 
-div.container img{
+div.cover-zone img{
     height: 100%;
     width: 100%;
     object-fit: cover;
@@ -37,7 +38,6 @@ div.container img{
 }
 
 div.container h2{
-    text-align: center;
     padding: 1rem;
 }
 
@@ -63,4 +63,31 @@ div.goBack > i{
     margin: auto;
     font-size: 1.5rem;
 }
+
+div.container p{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+div.thumbnails{
+    height: 100px;
+    width: 100%;
+}
+
+div.thumbnail{
+    width: calc(400px / 5);
+}
+
+div.thumbnail > img{
+    height: 100%;
+    width: 100%;
+    filter:grayscale(100%);
+}
+
+div.thumbnail > img.active{
+    filter: grayscale(0%);
+    border: 2px solid yellow;
+}
+
+
 

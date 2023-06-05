@@ -7,27 +7,27 @@ createApp({
                 {
                     img:"img/ace-ventura.jpg",
                     title:"Ace Ventura",
-                    actor:"Jim Carrey"
+                    actor:" Jim Carrey"
                 },
                 {
                     img:"img/jurassic-park.webp",
                     title:"Jurassic Park",
-                    actor:"Sam Neill" 
+                    actor:" Sam Neill" 
                 },
                 {
                     img:"img/matrix.webp",
                     title:"Matrix",
-                    actor:"Keanu Reeves"
+                    actor:" Keanu Reeves"
                 },
                 {
                     img:"img/pulp-fiction.jpg",
                     title:"Pulp Fiction",
-                    actor:"Uma Thurman" 
+                    actor:" Uma Thurman" 
                 },
                 {
                     img:"img/scream.avif",
                     title:"Scream",
-                    actor:"Neve Campbell"
+                    actor:" Neve Campbell"
                 }
                 
             ],
