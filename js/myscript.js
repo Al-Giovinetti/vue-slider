@@ -31,8 +31,8 @@ createApp({
                 }
                 
             ],
-
             activeIndex: 0,
+            autoplay: false
         }
     },
     methods: {
@@ -54,6 +54,10 @@ createApp({
             this.activeIndex = index 
 
         }
+
+    },
+    mounted(){
+        this.autoplay = setInterval(this.NextSlide,4000)
 
     }
 }).mount("#app");
