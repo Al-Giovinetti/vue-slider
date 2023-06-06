@@ -49,6 +49,10 @@ createApp({
             }else{
                 this.activeIndex ++
             }
+        },
+        TranportActiveIndex(index){
+            this.activeIndex = index 
+
         }
 
     }

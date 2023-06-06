@@ -31,7 +31,7 @@
                 </h2>
                 <p>With :{{ images[activeIndex].actor}}</p>
                 <div class="thumbnails flex" >
-                    <div class="thumbnail" v-for="(film,index) in images">
+                    <div class="thumbnail" v-for="(film,index) in images" @click = "TranportActiveIndex(index)">
                         <img v-bind:src="images[index].img" v-bind:alt="images[activeIndex].title"
                         v-bind:class="index === activeIndex ? 'active' : '' ">
                     </div>
